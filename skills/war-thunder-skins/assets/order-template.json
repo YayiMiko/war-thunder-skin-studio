@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "id": "new-order",
+  "vehicle": "unassigned",
+  "theme": "",
+  "art": "",
+  "stage": "concept",
+  "concept": {"selected": null, "decision": null},
+  "directions": [
+    {"id": "a", "intent": "整体角色化：主形象与载具轮廓融合"},
+    {"id": "b", "intent": "非对称主视觉：大幅角色或主要元素与对侧色块平衡"}
+  ],
+  "finish": {"roughness": 0.28, "metalness": 0.0, "preview_coat": 0.2},
+  "layers": [],
+  "validation": {"files": "pending", "mesh_visual": "pending", "game": "pending"}
+}

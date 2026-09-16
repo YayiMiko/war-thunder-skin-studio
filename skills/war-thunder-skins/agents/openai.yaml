@@ -1,0 +1,4 @@
+interface:
+  display_name: "War Thunder Skin Studio"
+  short_description: "Aircraft concepts, real-model projection and skin delivery"
+  default_prompt: "Use $war-thunder-skins to design two overall aircraft skin concepts before production."

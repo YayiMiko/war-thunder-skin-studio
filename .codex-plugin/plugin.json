@@ -1,0 +1,20 @@
+{
+  "name": "war-thunder-skin-studio",
+  "version": "0.1.0",
+  "description": "战雷涂装整体概念、真实模型投射与交付流程",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "战雷涂装工作室",
+    "shortDescription": "先定整体设计，再制作可用涂装",
+    "longDescription": "复用载具档案、订单模板、Blender 烘焙脚本与已验证案例。",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "使用战雷涂装工作室，先为我的飞机和立绘制作两个整体概念方案。"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "descriptor": "content/base/res/dynModelDesc.bin",
+  "pack": "content/base/res/aircrafts/air.grp",
+  "model": "su_30mkk",
+  "lod": 0,
+  "dependencies": ["su_30mkk_skeleton"],
+  "texture_packs": [{"path": "content.hq/hq_tex/res/hq_tex_aircrafts/su_30mkk.dxp.bin", "names": ["su_30mkk_c", "su_30mkk_n"]}]
+}
