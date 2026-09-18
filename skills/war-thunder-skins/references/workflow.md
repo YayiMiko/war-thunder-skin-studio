@@ -3,7 +3,7 @@
 Follow the token economy and acceptance defaults in SKILL.md. AI handles implementation and objective correctness; the user handles visual acceptance unless they explicitly delegate it.
 
 1. Concept: actual neutral aircraft views + main artwork -> usually two directions. Solve hierarchy, color masses, character scale and text zones. Supply concepts to the user; no production bake or game launch.
-2. Real mesh draft: derive placement from mesh/UV bounds and target axes before rendering. Batch changes and generate one low-cost preview set. Use numeric coverage/orientation checks where available; do not substitute repeated visual guessing.
+2. Real mesh draft: first record the reference-layout table required by SKILL.md; calibrate color boundaries and main graphic proportions against a corresponding camera. Derive placement from mesh/UV bounds and target axes before rendering. Batch changes and generate one low-cost preview set. Use numeric coverage/orientation checks where available, separately from reference fidelity. Do not shrink graphics to improve coverage or substitute repeated visual guessing.
 3. Production: bake once after requested changes and objective checks, validate maps/BLK/normal channels, and deliver the new package plus exported-map previews. A specific failure justifies a targeted fix and rerun; optional aesthetic concerns do not justify endless iteration.
 
 Label images by stage. AI paintovers are concepts; generated render files are review artifacts, not evidence that anyone inspected or accepted them.

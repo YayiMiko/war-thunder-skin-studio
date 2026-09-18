@@ -24,12 +24,23 @@ Early previews are overall visual designs made from the aircraft model and main 
 
 ## Production
 
-1. Read [schema.md](references/schema.md). Translate the selected concept into order layers, model-space coordinates and finish. A concept PNG alone is not a reproducible recipe.
+1. Read [schema.md](references/schema.md). Translate the selected concept into order layers, model-space coordinates and finish. A concept PNG alone is not a reproducible recipe. Apply the reference-layout contract below before adding detail.
 2. Preserve sources and use new version directories. Select exact material names, not numeric indices. Before placing decals, derive target bounds, axes, mirrored-side behavior and clipping constraints from the actual mesh/UVs. Typeset exact text assets. Check placement numerically where supported; do not guess coordinates and compensate with repeated full bakes.
 3. Batch the requested changes, then use one low-cost `preview` when needed. Generate views for the user; rendering images does not require sending them to the model. Once the requested implementation and objective checks are ready, run one `bake --size 4096` into a fresh output directory. Use 8K only when requested or demonstrably needed.
 4. Run `validate` and targeted checks for changed behavior. Current packer preserves original G/A bytes and writes R/B for the verified aircraft material. Other packing requires a dedicated adapter. Packed images must retain alpha and use Non-Color plus CHANNEL_PACKED in Blender. Exported-texture renders are human review artifacts by default.
 5. `install PACKAGE --skin-name NEW_ID` writes a new UserSkins folder and refuses overwrite. This fits authorized production delivery; respect narrower user scope. Human visual review need not block authorized delivery; label it pending. Never alter game archives or runtime executables.
 6. Report objective validation, AI visual inspection (if any), human visual acceptance and game verification separately. Neither a successful bake nor a generated preview proves visual acceptance or game correctness.
+
+## Reference-layout contract
+
+When implementing a selected concept, preserve its layout; do not silently redesign it. Explicit user revisions override only the named elements, and exact version rollbacks restore both assets and placement.
+
+- Record a short layout table in the order checkpoint: element, target surface, normalized center/width/height relative to that surface, orientation, color-region boundary and reference landmarks (root/tip, leading/trailing edge, seam). Record whether values are measured or estimated and any uncertainty; do not invent precision or demand user approval for routine estimates.
+- Match the reference camera as closely as practical, then compare major color boundaries and graphic proportions. Screen-space ratios are not world-space dimensions: account for perspective before mapping to mesh/UV coordinates. If exact matching is impossible, document the specific geometry conflict and closest feasible mapping.
+- Solve in this order: large color regions -> main lettering/emblem area and position -> secondary labels -> material and small engineering details. Do not add ornaments to compensate for a known mismatch in the first two stages.
+- Projection coverage measures how much of a decal lands on geometry; layout fidelity measures how much of the intended surface it occupies and where. Track these separately. Never shrink/inset a graphic merely to pass coverage or call coverage a reference-match score. First adjust projection axes, masks or split placement while preserving intended visible size.
+- Reuse one reference and one corresponding low-cost render within the existing image budget for necessary layout calibration; no exhaustive multi-view audit. Fix known major mismatches before final baking. If evidence is insufficient, provide a labeled draft and the specific unresolved layout issue; do not claim faithful completion or start an open-ended render loop.
+- Save the layout decision and remaining deviations once. User visual acceptance remains the default; it does not excuse arbitrary placement or known implementation errors.
 
 ## Token economy and acceptance
 
