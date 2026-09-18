@@ -23,6 +23,6 @@ Example dorsal projection for the verified Su axes x=nose, y=port, z=up (not his
 {"type":"image","image":"assets/character.png","origin":[-7,-4,0],"u_axis":[0,1,0],"v_axis":[1,0,0],"size":[8,13],"mask":{"normal":[0,0,1],"min_dot":0.2}}
 ```
 
-Inspect real results; mirrored UVs may prevent independent sides. baseline outputs three neutral views; preview outputs three layer views; bake outputs five exported-map views, a packed scene, controls, TGA/BLK and package.json. Normal maps retain native dimensions; albedo follows --size. Construction materials Studio_<set> remain in the baked scene, while objects display Exported_<set>. Regenerate from JSON or restore construction materials to edit.
+Check mirrored UV constraints numerically where available; they may prevent independent sides. Generated renders are for human review by default; use the bounded AI inspection policy in SKILL.md. baseline outputs three neutral views; preview outputs three layer views; bake outputs five exported-map views, a packed scene, controls, TGA/BLK and package.json. Normal maps retain native dimensions; albedo follows --size. Construction materials Studio_<set> remain in the baked scene, while objects display Exported_<set>. Regenerate from JSON or restore construction materials to edit.
 
 Validation checks sizes, format, uniform-color exceptions, hashes, exact BLK and preserved G/A. It does not prove UV coverage, text, engine parity or damage. Keep source-normal archive for validation; installed game skin needs images and BLK. Installation refuses existing directories.

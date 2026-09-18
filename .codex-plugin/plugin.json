@@ -1,20 +1,20 @@
 {
   "name": "war-thunder-skin-studio",
-  "version": "0.1.0",
-  "description": "战雷涂装整体概念、真实模型投射与交付流程",
+  "version": "0.1.0+codex.20260918023819",
+  "description": "\u6218\u96f7\u6d82\u88c5\u6574\u4f53\u6982\u5ff5\u3001\u771f\u5b9e\u6a21\u578b\u6295\u5c04\u4e0e\u4ea4\u4ed8\u6d41\u7a0b",
   "author": {
     "name": "Local developer"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "战雷涂装工作室",
-    "shortDescription": "先定整体设计，再制作可用涂装",
-    "longDescription": "复用载具档案、订单模板、Blender 烘焙脚本与已验证案例。",
+    "displayName": "\u6218\u96f7\u6d82\u88c5\u5de5\u4f5c\u5ba4",
+    "shortDescription": "\u5148\u5b9a\u6574\u4f53\u8bbe\u8ba1\uff0c\u518d\u5236\u4f5c\u53ef\u7528\u6d82\u88c5",
+    "longDescription": "\u590d\u7528\u8f7d\u5177\u6863\u6848\u3001\u8ba2\u5355\u6a21\u677f\u3001Blender \u70d8\u7119\u811a\u672c\u4e0e\u5df2\u9a8c\u8bc1\u6848\u4f8b\u3002",
     "developerName": "Local developer",
     "category": "Productivity",
     "capabilities": [],
     "defaultPrompt": [
-      "使用战雷涂装工作室，先为我的飞机和立绘制作两个整体概念方案。"
+      "\u4f7f\u7528\u6218\u96f7\u6d82\u88c5\u5de5\u4f5c\u5ba4\uff0c\u5148\u4e3a\u6211\u7684\u98de\u673a\u548c\u7acb\u7ed8\u5236\u4f5c\u4e24\u4e2a\u6574\u4f53\u6982\u5ff5\u65b9\u6848\u3002"
     ]
   }
 }
